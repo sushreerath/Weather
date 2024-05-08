@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <weather left side> -->
+      <div class="weather-side">
+        <div class="date-container">
+          <h2 class="date-dayname">--</h2>
+          <span class="date-day">--</span>
+          <i class="fa-solid fa-location-dot"></i>
+          <span class="location"></span>
+        </div>
+        <div class="weather-container">
+          <span class="weather-icon"></span>
+          <h1 class="weather-temp">--</h1>
+          <h3 class="weather-desc">--</h3>
+        </div>
+      </div>
+      <!-- <weather left side> -->
+      <!-- right -->
+      <div class="info-side">
+        <!-- today-info  -->
+        <div class="today-info-container">
+          <div class="today-info">
+            <div class="humidity">
+              <span class="title"
+                ><i class="fa-solid fa-droplet"></i> HUMIDITY</span
+              >
+              <span class="value">--</span>
+            </div>
+            <div class="wind">
+              <span class="title"><i class="fa-solid fa-wind"></i> WIND</span>
+              <span class="value">--</span>
+            </div>
+          </div>
+        </div>
+        <!-- today-info -->
+        <!-- week-container -->
+        <div class="week-container">
+          <ul class="week-list">
+            <li>
+              <span class="day-name">--</span>
+              <span class="day-temp">--</span>
+              <span class="day-icon">--</span>
+            </li>
+            <li>
+              <span class="day-name">--</span>
+              <span class="day-temp">--</span>
+              <span class="day-icon">--</span>
+            </li>
+            <li>
+              <span class="day-name">--</span>
+              <span class="day-temp">--</span>
+              <span class="day-icon">--</span>
+            </li>
+            <li>
+              <span class="day-name">--</span>
+              <span class="day-temp">--</span>
+              <span class="day-icon">--</span>
+            </li>
+          </ul>
+        </div>
+        <!-- week-container -->
+        <!-- search -->
+        <div class="location-container">
+          <input class="location-input" type="text" id="city" value="PIPILI" />
+          <p style="display: flex; justify-content: end">SUSHREE</p>
+        </div>
+        <!-- search -->
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
